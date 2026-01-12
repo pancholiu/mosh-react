@@ -1,18 +1,9 @@
 import { useState } from "react";
-import ListGroup from "./components/ListGroup";
-import "./App.css";
-
-const items = ["New York", "Los Angeles", "San Francisco"];
+import Button from "./components/Button/Button";
+import Like from "./Like";
 
 function App() {
-  const [alertVisible, setAlertVisible] = useState(false);
-  return (
-    <ListGroup
-      items={items}
-      heading="Miami"
-      onSelectItem={() => console.log(items)}
-    />
-  );
+  return <Like onClick={() => console.log("clicked!")} />;
 }
 
 export default App;

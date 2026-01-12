@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./ListGroup.css";
 import styled from "styled-components";
+import { BsFillCalendarFill } from "react-icons/bs";
 
 const List = styled.ul`
   list-style: none;
@@ -39,6 +40,7 @@ function ListGroup({ items, heading, onSelectItem }: Props) {
               onSelectItem(item);
             }}
           >
+            <BsFillCalendarFill color="blue" size={40} />
             {item}
           </ListItem>
         ))}
